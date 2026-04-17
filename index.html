@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Charl Rossouw — Marketing &amp; Digital Specialist based in Pretoria, South Africa. Campaigns, automation, and web." />
+  <title>Charl Rossouw | Marketing &amp; Digital Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#hero" aria-label="Charl Rossouw — home">CR</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav__links" id="navLinks" role="list">
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+      <button
+        class="nav__hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileOverlay"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ── Mobile Full-Screen Overlay ────────────────────────── -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <ul class="mobile-overlay__links" role="list">
+      <li><a class="mobile-overlay__link" href="#projects">Projects</a></li>
+      <li><a class="mobile-overlay__link" href="#skills">Skills</a></li>
+    </ul>
+    <p class="mobile-overlay__footer">charl@flowbit.co.za</p>
+  </div>
+
+  <!-- ── Hero ──────────────────────────────────────────────── -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <!-- Drifting ambient orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+    <!-- Noise grain texture -->
+    <div class="noise" aria-hidden="true"></div>
+
+    <div class="hero__content container">
+      <p class="hero__eyebrow fade-in" data-delay="1">Based in Pretoria, South Africa</p>
+      <h1 class="hero__name">
+        <span class="hero__name-line fade-in" data-delay="2">Charl</span>
+        <span class="hero__name-line hero__name-line--offset gradient-text fade-in" data-delay="3">Rossouw</span>
+      </h1>
+      <p class="hero__tagline fade-in" data-delay="3">Marketing &amp; Digital Specialist</p>
+      <p class="hero__description fade-in" data-delay="4">
+        Building brands, automating workflows, and driving measurable digital growth
+        across campaigns, platforms, and pipelines.
+      </p>
+      <div class="hero__cta fade-in" data-delay="4">
+        <a class="btn btn--primary" href="#projects">View Projects</a>
+      </div>
+    </div>
+
+    <!-- Editorial scroll indicator -->
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ── Projects ──────────────────────────────────────────── -->
+  <section class="projects" id="projects" aria-label="Featured projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A selection of campaigns, builds, and automations. More added as they ship.</p>
+      </div>
+
+      <div class="bento-grid">
+
+        <!-- Card 01 — Featured Flowbit showcase -->
+        <article class="project-card project-card--showcase fade-in" aria-label="Flowbit project">
+          <span class="project-card__num" aria-hidden="true">01</span>
+
+          <!-- Branded preview -->
+          <div class="project-brand-preview" aria-hidden="true">
+            <div class="project-brand-preview__orb project-brand-preview__orb--1"></div>
+            <div class="project-brand-preview__orb project-brand-preview__orb--2"></div>
+            <div class="project-brand-preview__content">
+              <p class="project-brand-preview__name">Flowbit</p>
+              <p class="project-brand-preview__tagline">Automation for Service Businesses</p>
+              <a class="project-brand-preview__link" href="https://www.flowbit.co.za/" target="_blank" rel="noopener noreferrer">
+                flowbit.co.za
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__role">Website Design &amp; Development</span>
+            </div>
+            <h3 class="project-card__title">Flowbit</h3>
+            <p class="project-card__desc">
+              Designed and developed the full website for Flowbit, a South African automation
+              platform for service businesses. From concept to live, including the frontend build
+              and automation workflows behind the product.
+            </p>
+            <ul class="project-card__achievements" aria-label="Key achievements">
+              <li>Designed and built the complete website from scratch</li>
+              <li>Developed the automation workflows powering the platform</li>
+              <li>Deployed and hosted via Vercel with CI/CD through GitHub</li>
+            </ul>
+            <div class="project-card__footer">
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag">Vite</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">GitHub</span>
+              </div>
+              <a class="btn btn--sm btn--primary" href="https://www.flowbit.co.za/" target="_blank" rel="noopener noreferrer">
+                Visit Site
+                <svg aria-hidden="true" width="11" height="11" viewBox="0 0 12 12" fill="none">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 02 — Kwiczy -->
+        <article class="project-card project-card--showcase fade-in" data-delay="1" aria-label="Kwiczy project">
+          <span class="project-card__num" aria-hidden="true">02</span>
+
+          <!-- Branded preview -->
+          <div class="project-brand-preview project-brand-preview--kwiczy" aria-hidden="true">
+            <div class="project-brand-preview__orb project-brand-preview__orb--1"></div>
+            <div class="project-brand-preview__orb project-brand-preview__orb--2"></div>
+            <div class="project-brand-preview__content">
+              <p class="project-brand-preview__name">Kwiczy</p>
+              <p class="project-brand-preview__tagline">Home Services Marketplace App</p>
+              <a class="project-brand-preview__link" href="https://www.kwiczy.com/" target="_blank" rel="noopener noreferrer">
+                kwiczy.com
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__role">Full Stack Development</span>
+            </div>
+            <h3 class="project-card__title">Kwiczy</h3>
+            <p class="project-card__desc">
+              Built a home repair marketplace from the ground up, connecting South African homeowners
+              with verified tradespeople through an AI matching engine called Finn. Integrated live
+              payments, real time data, and edge caching for a fast, reliable booking experience.
+            </p>
+            <ul class="project-card__achievements" aria-label="Key achievements">
+              <li>Designed and built the full platform from start to finish</li>
+              <li>Integrated Paystack for seamless South African payments</li>
+              <li>Deployed on Vercel with Supabase backend and Upstash caching</li>
+            </ul>
+            <div class="project-card__footer">
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag">Paystack</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Upstash</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">GitHub</span>
+              </div>
+              <a class="btn btn--sm btn--primary" href="https://www.kwiczy.com/" target="_blank" rel="noopener noreferrer">
+                Visit Site
+                <svg aria-hidden="true" width="11" height="11" viewBox="0 0 12 12" fill="none">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 03 — Studio Axis -->
+        <article class="project-card project-card--showcase fade-in" data-delay="2" aria-label="Studio Axis project">
+          <span class="project-card__num" aria-hidden="true">03</span>
+
+          <!-- Branded preview -->
+          <div class="project-brand-preview project-brand-preview--axis" aria-hidden="true">
+            <div class="project-brand-preview__orb project-brand-preview__orb--1"></div>
+            <div class="project-brand-preview__orb project-brand-preview__orb--2"></div>
+            <div class="project-brand-preview__content">
+              <p class="project-brand-preview__name">Studio Axis</p>
+              <p class="project-brand-preview__tagline">Architecture that inspires and endures</p>
+              <a class="project-brand-preview__link" href="https://studio-axis-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+                studio-axis.vercel.app
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__role">Website Design &amp; Development</span>
+            </div>
+            <h3 class="project-card__title">Studio Axis</h3>
+            <p class="project-card__desc">
+              Designed and developed the full website for Studio Axis, a contemporary architecture
+              firm specialising in residential, commercial, and public spaces. Built to reflect their
+              design philosophy of clean lines, spatial precision, and timeless craft.
+            </p>
+            <ul class="project-card__achievements" aria-label="Key achievements">
+              <li>Built the complete site from concept to deployment</li>
+              <li>Translated the firm's architectural identity into a clean, minimal web experience</li>
+              <li>Deployed via Vercel with continuous delivery through GitHub</li>
+            </ul>
+            <div class="project-card__footer">
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag">React</span>
+                <span class="tag">Vercel</span>
+                <span class="tag">GitHub</span>
+              </div>
+              <a class="btn btn--sm btn--primary" href="https://studio-axis-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+                Visit Site
+                <svg aria-hidden="true" width="11" height="11" viewBox="0 0 12 12" fill="none">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 04 — Canva Designs -->
+        <article class="project-card project-card--showcase fade-in" data-delay="3" aria-label="Canva design work">
+          <span class="project-card__num" aria-hidden="true">04</span>
+
+          <!-- Branded preview -->
+          <div class="project-brand-preview project-brand-preview--canva" aria-hidden="true">
+            <div class="project-brand-preview__orb project-brand-preview__orb--1"></div>
+            <div class="project-brand-preview__orb project-brand-preview__orb--2"></div>
+            <div class="project-brand-preview__content">
+              <p class="project-brand-preview__name">Canva Designs</p>
+              <p class="project-brand-preview__tagline">Creative & Brand Design Work</p>
+              <a class="project-brand-preview__link" href="https://drive.google.com/drive/folders/1wuRBVoP6aaGhGEATZmz29ZqY2uiZuIkW?usp=sharing" target="_blank" rel="noopener noreferrer">
+                View Folder
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__role">Graphic Design</span>
+            </div>
+            <h3 class="project-card__title">Canva Designs</h3>
+            <p class="project-card__desc">
+              A collection of graphic design work including social media creatives, brand assets,
+              marketing materials, and campaign visuals across various clients and projects.
+            </p>
+            <ul class="project-card__achievements" aria-label="Key achievements">
+              <li>Social media graphics and ad creatives for Meta campaigns</li>
+              <li>Brand identity assets and marketing collateral</li>
+              <li>Campaign visuals across multiple clients and industries</li>
+            </ul>
+            <div class="project-card__footer">
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag">Canva</span>
+                <span class="tag">Meta Ads</span>
+                <span class="tag">Brand Design</span>
+                <span class="tag">Social Media</span>
+              </div>
+              <a class="btn btn--sm btn--primary" href="https://drive.google.com/drive/folders/1wuRBVoP6aaGhGEATZmz29ZqY2uiZuIkW?usp=sharing" target="_blank" rel="noopener noreferrer">
+                View Designs
+                <svg aria-hidden="true" width="11" height="11" viewBox="0 0 12 12" fill="none">
+                  <path d="M3.5 1H11M11 1V8.5M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 05 — Meta Ads, full width bottom row -->
+        <article class="project-card project-card--showcase project-card--full fade-in" data-delay="4" aria-label="Meta Ads project">
+          <span class="project-card__num" aria-hidden="true">05</span>
+
+          <!-- Branded preview -->
+          <div class="project-brand-preview project-brand-preview--meta" aria-hidden="true">
+            <div class="project-brand-preview__orb project-brand-preview__orb--1"></div>
+            <div class="project-brand-preview__orb project-brand-preview__orb--2"></div>
+            <div class="project-brand-preview__content">
+              <p class="project-brand-preview__name">Meta Ads</p>
+              <p class="project-brand-preview__tagline">Paid Social Advertising</p>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="project-card__role">Paid Social</span>
+            </div>
+            <h3 class="project-card__title">Meta Ads — Kwiczy</h3>
+            <p class="project-card__desc">
+              Planned and ran paid social campaigns on Facebook and Instagram to drive awareness
+              and bookings for Kwiczy. Built and tested audiences, designed creatives, and
+              optimised campaigns based on real performance data.
+            </p>
+            <ul class="project-card__achievements" aria-label="Key achievements">
+              <li>Built and managed full campaign structure across Facebook and Instagram</li>
+              <li>Created ad creatives and copy tailored to South African homeowners</li>
+              <li>Continuously optimised targeting and spend based on live performance</li>
+            </ul>
+            <div class="project-card__footer">
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag">Meta Ads</span>
+                <span class="tag">Facebook</span>
+                <span class="tag">Instagram</span>
+                <span class="tag">Audience Targeting</span>
+                <span class="tag">Ad Creative</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /bento-grid -->
+    </div>
+  </section>
+
+  <!-- ── Skills ─────────────────────────────────────────────── -->
+  <section class="skills" id="skills" aria-label="Skills and expertise">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Expertise</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills__grid">
+
+        <!-- Digital Marketing -->
+        <div class="skill-card fade-in" data-delay="1">
+          <span class="skill-card__num" aria-hidden="true">01</span>
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Digital Marketing</h3>
+          <div class="skill-card__tags">
+            <span class="tag">SEO / SEM</span>
+            <span class="tag">Google Ads</span>
+            <span class="tag">Meta Ads</span>
+            <span class="tag">Email Marketing</span>
+            <span class="tag">Content Strategy</span>
+            <span class="tag">Analytics</span>
+            <span class="tag">CRO</span>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-card fade-in" data-delay="2">
+          <span class="skill-card__num" aria-hidden="true">02</span>
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Web Development</h3>
+          <div class="skill-card__tags">
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Framer</span>
+            <span class="tag">Landing Pages</span>
+            <span class="tag">UX Principles</span>
+          </div>
+        </div>
+
+        <!-- Automation -->
+        <div class="skill-card fade-in" data-delay="3">
+          <span class="skill-card__num" aria-hidden="true">03</span>
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Automation</h3>
+          <div class="skill-card__tags">
+            <span class="tag">Make (Integromat)</span>
+            <span class="tag">Zapier</span>
+            <span class="tag">n8n</span>
+            <span class="tag">CRM Workflows</span>
+            <span class="tag">API Integration</span>
+            <span class="tag">Lead Nurturing</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card fade-in" data-delay="4">
+          <span class="skill-card__num" aria-hidden="true">04</span>
+          <div class="skill-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="skill-card__title">Tools</h3>
+          <div class="skill-card__tags">
+            <span class="tag">Canva</span>
+            <span class="tag">Search Console</span>
+            <span class="tag">Paystack</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Upstash</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Vite</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+
+      </div><!-- /skills__grid -->
+    </div>
+  </section>
+
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grad-line" aria-hidden="true"></div>
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; <span id="footerYear"></span> Charl Rossouw. All rights reserved.</p>
+      <p class="footer__tagline">Built with intention.</p>
+      <a class="footer__back" href="#hero" aria-label="Back to top">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Top
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
