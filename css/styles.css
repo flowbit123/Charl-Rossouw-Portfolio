@@ -792,6 +792,10 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 @media (max-width: 768px) {
   :root { --container-pad: 1.25rem; }
+
+  /* Kill blur-heavy orbs on mobile — too expensive to render */
+  .orb { display: none; }
+
   .nav__hamburger { display: flex; }
   .nav__links { display: none; }
   .hero__name-line--offset { padding-left: clamp(0.75rem, 3vw, 2rem); }
