@@ -596,7 +596,53 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   background: rgba(0,176,255,0.14);
 }
 
-/* Card 05 full width */
+/* Wiggle Wear branded preview — playful rose/pink */
+.project-brand-preview--wiggle {
+  background: linear-gradient(135deg, #1f0a12 0%, #2e0f1c 50%, #190a11 100%);
+}
+.project-brand-preview--wiggle .project-brand-preview__orb--1 {
+  background: rgba(251,113,133,0.22);
+}
+.project-brand-preview--wiggle .project-brand-preview__orb--2 {
+  background: rgba(244,63,94,0.14);
+}
+.project-brand-preview--wiggle .project-brand-preview__link {
+  border-color: rgba(251,113,133,0.4);
+  color: #FB7185;
+  background: rgba(251,113,133,0.08);
+  -webkit-text-fill-color: #FB7185;
+}
+.project-brand-preview--wiggle .project-brand-preview__link:hover {
+  background: #FB7185;
+  border-color: #FB7185;
+  color: #0A0A0A;
+  -webkit-text-fill-color: #0A0A0A;
+}
+
+/* Tiny Trails branded preview — soft sky/mint */
+.project-brand-preview--trails {
+  background: linear-gradient(135deg, #06131f 0%, #0a1f26 50%, #06171a 100%);
+}
+.project-brand-preview--trails .project-brand-preview__orb--1 {
+  background: rgba(56,189,248,0.2);
+}
+.project-brand-preview--trails .project-brand-preview__orb--2 {
+  background: rgba(52,211,153,0.14);
+}
+.project-brand-preview--trails .project-brand-preview__link {
+  border-color: rgba(56,189,248,0.4);
+  color: #38BDF8;
+  background: rgba(56,189,248,0.08);
+  -webkit-text-fill-color: #38BDF8;
+}
+.project-brand-preview--trails .project-brand-preview__link:hover {
+  background: #38BDF8;
+  border-color: #38BDF8;
+  color: #0A0A0A;
+  -webkit-text-fill-color: #0A0A0A;
+}
+
+/* Card full width */
 .project-card--full { grid-column: 1 / -1; }
 .project-card--full .project-brand-preview { height: 200px; }
 
